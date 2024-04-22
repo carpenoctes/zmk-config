@@ -32,6 +32,16 @@
     , <&pro_micro 10 GPIO_ACTIVE_HIGH>
     ;
 };
+nice_view_spi: &spi0 {
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi0_default>;
+    pinctrl-1 = <&spi0_sleep>;
+    pinctrl-names = "default", "sleep";
+    cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
+};
+#define DEFAULT 0
+#define BOKST   1
+#define RAISE   2
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -51,7 +61,22 @@
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
-        
+        bokst_layer {
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |  ESC  |  K  |  M  |  D   |  F   |  B   |                                          |  ,   |  Ä    |  I    |  L   |   Ö   |   \  |
+            // |  TAB  |  G  |  T  |  S   |  N   |  P   |                                          |  Å   |  A    |  E    |  R   |   U   |   '  |
+            // | SHIFT |  Z  |  V  |  C   |  H   |  J   | L SHIFT | L SHIFT |  | LAYER 1 | L SHIFT |  .   |  O    |  Y    |  X   |   /   | CTRL |
+            //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  BT_CLEAR  | TAB  | BSPC  | R-ALT |
+            bindings = <
+            &kp ESC   &kp K &kp M &kp D &kp R &kp B                                                  &kp COMMA &kp SQT &kp I &kp L &kp SEMI &kp BSLH
+            &kp TAB   &kp A &kp S &kp D &kp F &kp G                                                  &kp BSLH  &kp A   &kp E &kp R &kp U &kp SQT
+            &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT            &mo 1   &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+                                  &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC       &kp RET &bt BT_CLR &kp TAB &kp BSPC &kp RALT
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+
         function_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |       |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
