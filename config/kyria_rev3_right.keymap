@@ -70,13 +70,13 @@ nice_view_spi: &spi0 {
 &mt LALT TAB      &kp X  &kp V  &kp C          &kp H      &kp Z         &lbh 0 0         &lbh 1 1  &lbh 2 2  &lbh 3 3   &kp DOT        &kp O     &kp U     &kp J  &kp Q     &kp BSLH
                                 &kp LG(GRAVE)  &kp LCTRL  &kp LEFT_ALT  &mt LSHIFT CAPS  &kp LGUI  &kp RET   &kp SPACE  &kp BACKSPACE  &lbh 4 4  &kp RALT
             >;
-z m b g k  ö ä u l y 
-d n t s f  . a e r i 
-h p v c x  , o å j ' 
+z m b g k  ö ä u l i 
+d n t s f  . a e r y 
+h p v c x  , o å j q 
 */
 bindings = <
-&kp C_MUTE        &kp Z  &kp M  &kp B   &kp G      &kp K                                                        &kp SEMI   &kp SQT        &kp U        &kp L     &kp Y     &kp PRINTSCREEN
-&mt LCTRL ESCAPE  &kp D  &kp N  &kp T   &kp S      &kp F                                                        &kp DOT    &kp A          &kp E        &kp R     &kp I     &kp W
+&kp C_MUTE        &kp Z  &kp M  &kp B   &kp G      &kp K                                                        &kp SEMI   &kp SQT        &kp U        &kp L     &kp I     &kp PRINTSCREEN
+&mt LCTRL ESCAPE  &kp D  &kp N  &kp T   &kp S      &kp F                                                        &kp DOT    &kp A          &kp E        &kp R     &kp Y     &kp W
 &mt LALT TAB      &kp H  &kp P  &kp V   &kp C      &kp X  &lbh 0 0         &lbh 1 1         &lbh 2 2  &lbh 3 3  &kp COMMA  &kp O          &kp LBKT     &kp J     &kp Q     &kp BSLH
                                 &kp LG(GRAVE)  &kp LCTRL  &kp LEFT_ALT     &mt LSHIFT CAPS  &kp LGUI  &kp RET   &kp SPACE  &kp BACKSPACE  &lbh 4 4     &kp RALT
             >;
