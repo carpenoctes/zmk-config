@@ -40,20 +40,10 @@
         compatible = "zmk,keymap";
 
         DEFAULT {
-        /*    bindings = <
-&kp C_MUTE        &kp K  &kp M  &kp D          &kp F      &kp B                                                         &kp COMMA      &kp SQT   &kp I     &kp L  &kp Y     &kp PRINTSCREEN
-&mt LCTRL ESCAPE  &kp G  &kp T  &kp S          &kp N      &kp P                                                         &kp SEMI       &kp A     &kp E     &kp R  &kp LBKT  &kp W
-&mt LALT TAB      &kp X  &kp V  &kp C          &kp H      &kp Z         &lbh 0 0         &lbh 1 1  &lbh 2 2  &lbh 3 3   &kp DOT        &kp O     &kp U     &kp J  &kp Q     &kp BSLH
-                                &kp LG(GRAVE)  &kp LCTRL  &kp LEFT_ALT  &mt LSHIFT CAPS  &kp LGUI  &kp RET   &kp SPACE  &kp BACKSPACE  &lbh 4 4  &kp RALT
-            >;
-j l o i u  f c d h k 
-m r a e y  v s t n g 
-z x å ä ö  . , p b ' 
-*/
 bindings = <
-&kp C_MUTE        &kp J  &kp L  &kp O          &kp I      &kp U                                                            &kp F          &kp C        &kp D     &kp H  &kp K     &kp PRINTSCREEN
-&mt LCTRL ESCAPE  &kp M  &kp R  &kp A          &kp E      &kp Y                                                            &kp V          &kp S        &kp T     &kp N  &kp G     &kp W
-&mt LALT TAB      &kp Z  &kp X  &kp LBKT       &kp SQT    &kp SEMI         &lbh 0 0         &lbh 1 1  &lbh 2 2  &lbh 3 3   &kp DOT        &kp COMMA    &kp P     &kp B  &kp Q     &kp BSLH
+&kp C_MUTE        &kp Z  &kp M  &kp B   &kp G      &kp K                                                        &kp SEMI   &kp SQT        &kp U        &kp L     &kp Y     &kp PRINTSCREEN
+&mt LCTRL ESCAPE  &kp D  &kp N  &kp T   &kp S      &kp F                                                        &kp DOT    &kp A          &kp E        &kp R     &kp I     &kp W
+&mt LALT TAB      &kp H  &kp P  &kp V   &kp C      &kp X  &lbh 0 0         &lbh 1 1         &lbh 2 2  &lbh 3 3  &kp COMMA  &kp O          &kp LBKT     &kp J     &kp Q     &kp BSLH
                                 &kp LG(GRAVE)  &kp LCTRL  &kp LEFT_ALT     &mt LSHIFT CAPS  &kp LGUI  &kp RET   &kp SPACE  &kp BACKSPACE  &lbh 4 4     &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
