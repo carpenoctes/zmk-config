@@ -42,6 +42,7 @@ nice_view_spi: &spi0 {
 #define CODING  2
 #define NAVI    3
 #define MEDIA   4
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -65,10 +66,10 @@ nice_view_spi: &spi0 {
 
         DEFAULT {
             bindings = <
-&kp C_MUTE        &kp K  &kp M  &kp D       &kp F      &kp B                                                         &kp COMMA      &kp SQT   &kp I     &kp L  &kp Y     &kp PRINTSCREEN
-&mt LCTRL ESCAPE  &kp G  &kp T  &kp S       &kp N      &kp P                                                         &kp SEMI       &kp A     &kp E     &kp R  &kp LBKT  &kp W
-&mt LALT TAB      &kp X  &kp V  &kp C       &kp H      &kp Z         &lbh 0 0         &lbh 1 1  &lbh 2 2  &lbh 3 3   &kp DOT        &kp O     &kp U     &kp J  &kp Q     &kp BSLH
-                                &kp ESCAPE  &kp LCTRL  &kp LEFT_ALT  &mt LSHIFT CAPS  &kp LGUI  &kp RET   &kp SPACE  &kp BACKSPACE  &lbh 4 4  &kp RALT
+&kp C_MUTE        &kp K  &kp M  &kp D          &kp F      &kp B                                                         &kp COMMA      &kp SQT   &kp I     &kp L  &kp Y     &kp PRINTSCREEN
+&mt LCTRL ESCAPE  &kp G  &kp T  &kp S          &kp N      &kp P                                                         &kp SEMI       &kp A     &kp E     &kp R  &kp LBKT  &kp W
+&mt LALT TAB      &kp X  &kp V  &kp C          &kp H      &kp Z         &lbh 0 0         &lbh 1 1  &lbh 2 2  &lbh 3 3   &kp DOT        &kp O     &kp U     &kp J  &kp Q     &kp BSLH
+                                &kp LG(GRAVE)  &kp LCTRL  &kp LEFT_ALT  &mt LSHIFT CAPS  &kp LGUI  &kp RET   &kp SPACE  &kp BACKSPACE  &lbh 4 4  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
