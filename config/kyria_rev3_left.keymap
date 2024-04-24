@@ -12,6 +12,7 @@
     // chain-length = <25>; // Uncomment if using only per-key LEDs.
 };
  */
+ 
 #define DEFAULT 0
 #define NUMBERS 1
 #define CODING  2
