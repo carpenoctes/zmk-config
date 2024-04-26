@@ -62,7 +62,9 @@
             #binding-cells = <0>;
             bindings = <&hlt 2 DOT>, <&kp EXCL>;
         };
+
         //single and double quotes
+
         sdquotes: sdquotes {
             compatible = "zmk,behavior-tap-dance";
             label = "SDQUOTES";
@@ -78,7 +80,7 @@
             bindings = <
 &kp C_MUTE        &kp H  &kp P  &kp B     &kp G      &kp D                                                                   &kp SEMI       &kp SQT       &kp U      &kp M  &kp J  &kp PRINTSCREEN
 &mt LCTRL ESCAPE  &kp L  &kp N  &kp T     &hlt 1 S   &hlt 2 F                                                                &dot2Exc       &hlt 1 A      &kp E      &kp R  &kp I  &kp Y
-&mt LALT TAB      &kp Z  &kp V  &kp K     &kp C      &kp X                   &lbh 0 0         &lbh 1 1  &lbh 2 2  &lbh 3 3   &commaQ        &kp O         &kp LBKT   &kp W  &kp Q  &kp BSLH
+&mt LALT TAB      &kp Z  &kp V  &kp K     &kp C      &kp X                   &lbh 0 0         &lbh 1 1  &lbh 2 2  &lbh 3 3   &commaQ        &kp O         &kp LBKT   &kp W  &kp Q  &sdquotes
                                 &kp LEFT  &kp LCTRL  &mt LEFT_ALT LG(GRAVE)  &mt LSHIFT CAPS  &kp LGUI  &kp RET   &kp SPACE  &kp BACKSPACE  &mt RALT DEL  &kp RIGHT
             >;
 
@@ -109,9 +111,9 @@
 
         NAVI {
             bindings = <
-&trans       &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_CLR                                  &kp C_PREV  &kp C_PP  &kp C_NEXT    &kp C_BRI_INC  &kp C_BRI_DEC  &trans
-&sys_reset   &kp F5  &kp F6   &kp F7   &kp F8   &none                                       &kp HOME    &kp LEFT  &kp UP        &kp RIGHT      &kp END        &sys_reset
-&bootloader  &kp F9  &kp F10  &kp F11  &kp F12  &none       &trans  &trans  &trans  &trans  &kp INS     &kp LEFT  &kp DOWN      &kp RIGHT      &kp END        &bootloader
+&trans       &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_CLR                                  &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp C_BRI_INC  &kp C_BRI_DEC  &trans
+&sys_reset   &kp F5  &kp F6   &kp F7   &kp F8   &none                                       &kp HOME    &kp LEFT  &kp UP      &kp RIGHT      &kp END        &sys_reset
+&bootloader  &kp F9  &kp F10  &kp F11  &kp F12  &none       &trans  &trans  &trans  &trans  &kp INS     &kp LEFT  &kp DOWN    &kp RIGHT      &kp END        &bootloader
                               &trans   &trans   &trans      &trans  &trans  &trans  &trans  &trans      &trans    &trans
             >;
 
