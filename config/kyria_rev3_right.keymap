@@ -134,8 +134,8 @@ nice_view_spi: &spi0 {
         NAVI {
             bindings = <
 &trans       &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_CLR                                  &kp C_PREV  &kp C_PP  &kp C_NEXT    &kp C_BRI_INC  &kp C_BRI_DEC  &trans
-&sys_reset   &kp F5  &kp F6   &kp F7   &kp F8   &none                                       &kp INSERT  &none     &kp UP_ARROW  &none          &none          &sys_reset
-&bootloader  &kp F9  &kp F10  &kp F11  &kp F12  &none       &trans  &trans  &trans  &trans  &kp HOME    &kp LEFT  &kp DOWN      &kp RIGHT      &kp END        &bootloader
+&sys_reset   &kp F5  &kp F6   &kp F7   &kp F8   &none                                       &kp HOME    &kp LEFT  &kp UP        &kp RIGHT      &kp END        &sys_reset
+&bootloader  &kp F9  &kp F10  &kp F11  &kp F12  &none       &trans  &trans  &trans  &trans  &kp INS     &kp LEFT  &kp DOWN      &kp RIGHT      &kp END        &bootloader
                               &trans   &trans   &trans      &trans  &trans  &trans  &trans  &trans      &trans    &trans
             >;
 
@@ -143,4 +143,3 @@ nice_view_spi: &spi0 {
         };
     };
 };
-
