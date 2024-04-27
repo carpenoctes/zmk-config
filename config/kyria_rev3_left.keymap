@@ -71,6 +71,20 @@
             #binding-cells = <0>;
             bindings = <&kp BSLH>, <&kp LS(N2)>;
         };
+
+        atEsc: atEsc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ATESC";
+            #binding-cells = <0>;
+            bindings = <&mt LCTRL ESC>, <&kp RA(N2)>;
+        };
+
+        Ydollar: Ydollar {
+            compatible = "zmk,behavior-tap-dance";
+            label = "YDOLLAR";
+            #binding-cells = <0>;
+            bindings = <&kp Y>, <&kp RA(N4)>;
+        };
     };
 
     keymap {
@@ -78,10 +92,10 @@
 
         DEFAULT {
             bindings = <
-&kp C_MUTE        &kp H  &kp P  &kp B     &kp G      &kp D                                                                   &kp SEMI       &kp SQT       &kp U      &kp M  &kp J  &kp PRINTSCREEN
-&mt LCTRL ESCAPE  &kp L  &kp N  &kp T     &hlt 1 S   &hlt 2 F                                                                &dot2Exc       &hlt 1 A      &kp E      &kp R  &kp I  &kp Y
-&mt LALT TAB      &kp Z  &kp V  &kp K     &kp C      &kp X                   &lbh 0 0         &lbh 1 1  &lbh 2 2  &lbh 3 3   &commaQ        &kp O         &kp LBKT   &kp W  &kp Q  &sdquotes
-                                &kp LEFT  &kp LCTRL  &mt LEFT_ALT LG(GRAVE)  &mt LSHIFT CAPS  &kp LGUI  &kp RET   &kp SPACE  &kp BACKSPACE  &mt RALT DEL  &kp RIGHT
+&kp C_MUTE    &kp H  &kp P  &kp B     &kp G      &kp D                                                                   &kp SEMI       &kp SQT       &kp U      &kp M  &kp J  &kp PRINTSCREEN
+&atEsc        &kp L  &kp N  &kp T     &hlt 1 S   &hlt 2 F                                                                &dot2Exc       &hlt 1 A      &kp E      &kp R  &kp I  &Ydollar
+&mt LALT TAB  &kp Z  &kp V  &kp K     &kp C      &kp X                   &lbh 0 0         &lbh 1 1  &lbh 2 2  &lbh 3 3   &commaQ        &kp O         &kp LBKT   &kp W  &kp Q  &sdquotes
+                            &kp LEFT  &kp LCTRL  &mt LEFT_ALT LG(GRAVE)  &mt LSHIFT CAPS  &kp LGUI  &kp RET   &kp SPACE  &kp BACKSPACE  &mt RALT DEL  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
