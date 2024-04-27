@@ -103,11 +103,11 @@ nice_view_spi: &spi0 {
             bindings = <&mt LCTRL ESC>, <&kp RA(N2)>;
         };
 
-        Ydollar: Ydollar {
+        Idollar: Idollar {
             compatible = "zmk,behavior-tap-dance";
-            label = "YDOLLAR";
+            label = "IDOLLAR";
             #binding-cells = <0>;
-            bindings = <&kp Y>, <&kp RA(N4)>;
+            bindings = <&kp I>, <&kp RA(N4)>;
         };
     };
 
@@ -116,9 +116,9 @@ nice_view_spi: &spi0 {
 
         DEFAULT {
             bindings = <
-&kp C_MUTE    &kp H  &kp P  &kp B     &kp G      &kp D                                                                   &kp SEMI       &kp SQT       &kp U      &kp M  &kp J  &kp PRINTSCREEN
-&atEsc        &kp L  &kp N  &kp T     &hlt 1 S   &hlt 2 F                                                                &dot2Exc       &hlt 1 A      &kp E      &kp R  &kp I  &Ydollar
-&mt LALT TAB  &kp Z  &kp V  &kp K     &kp C      &kp X                   &lbh 0 0         &lbh 1 1  &lbh 2 2  &lbh 3 3   &commaQ        &kp O         &kp LBKT   &kp W  &kp Q  &sdquotes
+&kp C_MUTE    &kp H  &kp P  &kp B     &kp G      &kp D                                                                   &kp SEMI       &kp SQT       &kp U      &kp M  &kp J     &kp PRINTSCREEN
+&atEsc        &kp L  &kp N  &kp T     &hlt 1 S   &hlt 2 F                                                                &dot2Exc       &hlt 1 A      &kp E      &kp R  &Idollar  &kp Y
+&mt LALT TAB  &kp Z  &kp V  &kp K     &kp C      &kp X                   &lbh 0 0         &lbh 1 1  &lbh 2 2  &lbh 3 3   &commaQ        &kp O         &kp LBKT   &kp W  &kp Q     &sdquotes
                             &kp LEFT  &kp LCTRL  &mt LEFT_ALT LG(GRAVE)  &mt LSHIFT CAPS  &kp LGUI  &kp RET   &kp SPACE  &kp BACKSPACE  &mt RALT DEL  &kp RIGHT
             >;
 
