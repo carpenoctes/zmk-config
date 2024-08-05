@@ -85,6 +85,27 @@
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp RA(N4)>;
         };
+
+        smartshift: smartshift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SMARTSHIFT";
+            #binding-cells = <0>;
+            bindings = <&sk LSHFT>, <&kt CAPS>;
+        };
+
+        multileft: multileft {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MULTILEFT";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT>, <&kp HOME>;
+        };
+
+        multiright: multiright {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MULTIRIGHT";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT>, <&kp END>;
+        };
     };
 
     keymap {
@@ -92,10 +113,10 @@
 
         DEFAULT {
             bindings = <
-&kp C_MUTE    &kp H  &kp P  &kp B     &kp G      &kp D                                                                   &kp SEMI       &kp SQT       &kp U      &kp M  &kp J     &kp PRINTSCREEN
-&atEsc        &kp L  &kp N  &kp T     &hlt 1 S   &hlt 2 F                                                                &dot2Exc       &hlt 1 A      &kp E      &kp R  &Idollar  &kp Y
-&mt LALT TAB  &kp Z  &kp V  &kp K     &kp C      &kp X                   &lbh 0 0         &lbh 1 1  &lbh 2 2  &lbh 3 3   &commaQ        &kp O         &kp LBKT   &kp W  &kp Q     &sdquotes
-                            &kp LEFT  &kp LCTRL  &mt LEFT_ALT LG(GRAVE)  &mt LSHIFT CAPS  &kp LGUI  &kp RET   &kp SPACE  &kp BACKSPACE  &mt RALT DEL  &kp RIGHT
+&kp C_MUTE    &kp H  &kp P  &kp B       &kp G      &kp D                                                               &kp SEMI       &kp SQT       &kp U        &kp M  &kp J     &kp PRINTSCREEN
+&atEsc        &kp L  &kp N  &kp T       &hlt 1 S   &hlt 2 F                                                            &dot2Exc       &hlt 1 A      &kp E        &kp R  &Idollar  &kp Y
+&mt LALT TAB  &kp Z  &kp V  &kp K       &kp C      &kp X                   &lbh 0 0     &lbh 1 1  &lbh 2 2  &lbh 3 3   &commaQ        &kp O         &kp LBKT     &kp W  &kp Q     &sdquotes
+                            &multileft  &kp LCTRL  &mt LEFT_ALT LG(GRAVE)  &smartshift  &kp LGUI  &kp RET   &kp SPACE  &kp BACKSPACE  &mt RALT DEL  &multiright
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
