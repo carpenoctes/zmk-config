@@ -115,6 +115,7 @@ nice_view_spi: &spi0 {
             label = "SMARTSHIFT";
             #binding-cells = <0>;
             bindings = <&sk LSHFT>, <&kt CAPS>;
+            tapping-term-ms = <300>;
         };
 
         multileft: multileft {
