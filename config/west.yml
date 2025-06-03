@@ -4,7 +4,7 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
-    - name: infely                             # new entry
+    - name: carpenoctes                             # new entry
       url-base: https://github.com/carpenoctes      # new entry
   projects:
     - name: zmk
