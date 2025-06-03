@@ -114,7 +114,7 @@
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
-
+git remote set-url origin git@github.com:username/repo.git
         CODING {
             bindings = <
 &trans  &kp HASH      &kp RA(E)      &kp RA(NUMBER_3)  &kp RA(N4)     &kp PERCENT                                               &kp LS(NUMBER_6)          &kp LS(NUMBER_2)  &kp BSLH    &kp LS(FSLH)  &kp LS(N0)       &trans
