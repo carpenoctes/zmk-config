@@ -1,0 +1,257 @@
+layout: {zmk_keyboard: base}
+layers:
+  DEFAULT:
+  - MUTE
+  - H
+  - P
+  - B
+  - G
+  - D
+  - ö
+  - ä
+  - U
+  - M
+  - J
+  - {t: NUMBERS, h: toggle}
+  - ESC
+  - L
+  - N
+  - T
+  - S
+  - F
+  - {t: ., s: '!'}
+  - A
+  - E
+  - R
+  - '&Idollar'
+  - Y
+  - TAB
+  - Z
+  - V
+  - K
+  - C
+  - X
+  - {t: LEFT, h: NUMBERS}
+  - {t: UP, h: CODING}
+  - {t: DOWN, h: CODING}
+  - {t: RIGHT, h: NUMBERS}
+  - {t: ',', s: '?'}
+  - O
+  - å
+  - W
+  - Q
+  - '&sdquotes'
+  - {t: HOME, h: LSHFT}
+  - LCTRL
+  - LALT
+  - LGUI
+  - {t: Gui ⇧§, h: NAVI}
+  - BACKSPACE
+  - RET
+  - SPACE
+  - {t: DEL, h: LCTRL}
+  - {t: END, h: RALT}
+  NUMBERS:
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+F1
+  - Gui+F2
+  - Gui+F3
+  - Gui+F4
+  - Gui+F5
+  - '='
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - '-'
+  - {t: ▽, type: trans}
+  - Gui+1
+  - Gui+2
+  - Gui+3
+  - Gui+4
+  - Gui+5
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '*'
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  CODING:
+  - {t: ▽, type: trans}
+  - '#'
+  - €
+  - £
+  - $
+  - '%'
+  - '&'
+  - '"'
+  - ''''
+  - _
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ¨
+  - '?'
+  - '!'
+  - '@'
+  - ':'
+  - <
+  - (
+  - '{'
+  - '['
+  - +
+  - '-'
+  - {t: ▽, type: trans}
+  - '~'
+  - ¤
+  - /
+  - \
+  - '|'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '>'
+  - )
+  - '}'
+  - ']'
+  - '*'
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  NAVI:
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - BT CLR
+  - PREV
+  - PP
+  - NEXT
+  - BRI INC
+  - BRI DEC
+  - {t: ▽, type: trans}
+  - '&sys_reset'
+  - F5
+  - F6
+  - F7
+  - F8
+  - PRINTSCREEN
+  - HOME
+  - LEFT
+  - UP
+  - RIGHT
+  - END
+  - '&sys_reset'
+  - '&bootloader'
+  - F9
+  - F10
+  - F11
+  - F12
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - INS
+  - LEFT
+  - DOWN
+  - RIGHT
+  - END
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  QWERTY:
+  - {t: ▽, type: trans}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ö
+  - å
+  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - N
+  - M
+  - {t: ',', s: '?'}
+  - {t: ., s: '!'}
+  - '-'
+  - ä
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}

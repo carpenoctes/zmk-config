@@ -1,0 +1,47 @@
+parse_config:
+  raw_binding_map:
+    # DEFAULT
+    "&kp SEMI": 'ö'
+    "&kp SQT": 'ä'
+    "&kp LBKT": 'å'
+    "&kp SLASH": '-'
+    "&commaQ": {t: ',', s: '?'}
+    "&dotExc": {t: '.', s: '!'}
+    "&hlt 3 LG(GRAVE)": {t: 'Gui §', h: NAVI}
+    "&hlt 3 LG(LS(GRAVE))": {t: 'Gui ⇧§', h: NAVI}
+
+    # NUMBERS / shared
+    "&kp LS(N0)": '='
+    "&kp MINUS": '+'
+    "&kp FSLH": '-'
+    "&kp KP_MULTIPLY": '*'
+    "&kp KP_DIVIDE": '/'
+
+    # CODING
+    "&kp HASH": '#'
+    "&kp RA(E)": '€'
+    "&kp RA(NUMBER_3)": '£'
+    "&kp RA(N4)": '$'
+    "&kp PERCENT": '%'
+    "&kp LS(NUMBER_6)": '&'
+    "&kp LS(NUMBER_2)": '"'
+    "&kp BSLH": "'"
+    "&kp LS(FSLH)": '_'
+    "&kp RBKT": '¨'
+    "&kp LS(MINUS)": '?'
+    "&kp EXCL": '!'
+    "&kp RA(N2)": '@'
+    "&kp LS(DOT)": ':'
+    "&kp NON_US_BACKSLASH": '<'
+    "&kp LS(N8)": '('
+    "&kp RA(N7)": '{'
+    "&kp RA(N8)": '['
+    "&kp RA(RBKT)": '~'
+    "&kp LS(N4)": '¤'
+    "&kp LS(N7)": '/'
+    "&kp RA(MINUS)": '\'
+    "&kp RA(NON_US_BACKSLASH)": '|'
+    "&kp LS(NON_US_BACKSLASH)": '>'
+    "&kp LS(N9)": ')'
+    "&kp RA(N0)": '}'
+    "&kp RA(N9)": ']'
