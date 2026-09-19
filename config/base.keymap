@@ -71,7 +71,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYERTOGGLER";
             #binding-cells = <0>;
-            bindings = <&tog 1>, <&tog 4>;
+            bindings = <&tog 4>, <&tog 1>;
         };
 
     };
