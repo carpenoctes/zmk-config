@@ -83,8 +83,8 @@
             bindings = <
 &kp C_MUTE    &kp H  &kp P  &kp B       &kp G      &kp D                                                               &kp SEMI       &kp SQT       &kp U        &kp M  &kp J     &layertoggler
 &kp ESC       &kp L  &kp N  &kp T       &kp S      &kp F                                                               &dotExc         &kp A         &kp E        &kp R  &Idollar  &kp Y
-&kp TAB       &kp Z  &kp V  &kp K       &kp C      &kp X     &hlt 1 LEFT  &hlt 2 UP         &hlt 2 DOWN  &hlt 1 RIGHT  &commaQ        &kp O         &kp LBKT     &kp W  &kp Q     &sdquotes
-              &mt LSHFT HOME  &kp LCTRL  &kp LALT  &kp LGUI  &hlt 3 LG(LS(GRAVE))           &kp BACKSPACE     &kp RET  &kp SPACE  &mt LCTRL DEL  &mt RALT END
+&kp TAB       &kp Z  &kp V  &kp K       &kp C      &kp X     &mt LALT LEFT  &hlt 2 UP         &hlt 2 DOWN  &hlt 1 RIGHT  &commaQ        &kp O         &kp LBKT     &kp W  &kp Q     &sdquotes
+              &mt LSHFT HOME  &kp LCTRL  &sl 2  &kp LGUI  &hlt 3 LG(LS(GRAVE))           &kp BACKSPACE     &kp RET  &kp SPACE  &mt LCTRL DEL  &mt RALT END
             >;
 
             sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB)) &inc_dec_kp RIGHT LEFT>;
